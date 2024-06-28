@@ -6,14 +6,14 @@ public class Board {
     private Piece[][] pieces;
 
 
-    public Board(int rows, int collums) {
-        if (rows <1 && collums < 1){
+    public Board(int rows, int colums) {
+        if (rows <1 && colums < 1){
             throw new BoardException("Error creating bopard");
         }
 
         this.rows = rows;
-        this.columns = collums;
-        pieces = new Piece[rows][collums];
+        this.columns = colums;
+        pieces = new Piece[rows][colums];
 
     }
     public int getRows() {
