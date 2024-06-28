@@ -2,7 +2,7 @@ package Boardgame;
 
 public class Board {
     private int rows;
-    private int collumns;
+    private int columns;
     private Piece[][] pieces;
 
 
@@ -12,7 +12,7 @@ public class Board {
         }
 
         this.rows = rows;
-        this.collumns = collums;
+        this.columns = collums;
         pieces = new Piece[rows][collums];
 
     }
@@ -20,8 +20,8 @@ public class Board {
         return rows;
     }
 
-    public int getCollumns() {
-        return collumns;
+    public int getColumns() {
+        return columns;
     }
 
 
@@ -62,7 +62,7 @@ public class Board {
     }
 
     private Boolean positionExists(int row, int column){
-        return row >=0 && row < rows && column >=0 && column < collumns;
+        return row >=0 && row < rows && column >=0 && column < columns;
     }
 
     public Boolean positionExists(Position position){
